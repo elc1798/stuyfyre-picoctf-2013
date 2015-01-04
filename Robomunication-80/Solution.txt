@@ -1,0 +1,7 @@
+Quite obviously, this mp3 is in Morse Code:
+BEEP = SHORT
+BOOP = LONG
+
+HELLOWHATISTHEKEY ITISBOOPBEEP
+
+Key: BOOPBEEP
