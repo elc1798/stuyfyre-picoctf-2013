@@ -1,0 +1,5 @@
+Decompile CrackMe2.class into CrackMe2.java.
+
+We get: iT6chiweTohy4oot as our 'char-by-char' breakdown of the password.
+
+Key: iT6chiweTohy4oot
