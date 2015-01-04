@@ -1,0 +1,7 @@
+Upon inspecting the Hex of kane.docx, we see the first 2 bits are PK, indicating it is 'packed', specifically in a zip file.
+
+$ unzip kane.docx
+
+Look at word/media/key.png
+
+Key: docx_why_not_docz
