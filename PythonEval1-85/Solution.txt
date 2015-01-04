@@ -1,0 +1,28 @@
+Contents:
+
+# task1.py
+print "Welcome to mystery math!"
+
+flag = "xxxxxxxxxx"
+
+while True:
+  x = input("Enter number 1> ")
+  x = x*x + ord(flag[0]) * ord(flag[1]) + ord(flag[2]) * x
+  y = input("Enter number 2> ")
+  if y / 6 + 7 - y == x:
+    print "Here ya go! ", flag
+    exit(0)
+  else:
+    print "Your lucky number is ", x - y
+
+We need to know what x evaluates to after one go so we just put in 1 for x and 0 for y. That way, printing out x - y just yields the value of x. The next go, we enter 1 for x, 
+then for y we exploit python's 'eval' function: (12016 - 7) * 6 / -5
+
+$ nc python.picoctf.com 6361
+Welcome to mystery math!
+Enter number 1> 1       
+Enter number 2> 0
+Your lucky number is  12016
+Enter number 1> 1
+Enter number 2> 12009 * 6 / -5
+Here ya go!  eval_is_best_thing_evar
