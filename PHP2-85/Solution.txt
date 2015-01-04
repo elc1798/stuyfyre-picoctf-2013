@@ -22,7 +22,9 @@ if($_GET[id] == "admin")
 Can you authenticate to this website?
 <!-- source: index.phps -->
 
-Now we see a simple solution:
+
+
+Now we see a solution:
 
 if(eregi("admin",$_GET[id])) {
   echo("<p>not allowed!</p>");
@@ -39,3 +41,4 @@ if($_GET[id] == "admin")
 }
 
 This function does not use regex matching, but uses regular string matching!
+
