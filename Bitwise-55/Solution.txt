@@ -1,0 +1,14 @@
+Since this Bit.java program requires a password and verifies it using some bitwise operations and character checking, the first instinct is to reverse the bitwise operations using the checking 
+values.
+
+However you run into the problem of being unable to accurately reverse these bitwise operations, and you notice that it's checking the password CHARACTER BY CHARACTER.
+I wrote BitSolution.java to brute force this problem, loading in an alphabet of all capital, lowercase letters, numbers, and !@#$% as well as whitespace characters. Since this is a low 'n' value, 
+the Big O value of this algorithm is 10n, which is very very fast to crunch.
+
+$ javac BitSolution.java
+# java BitSolution
+ub3rs3cr3t
+
+$
+
+Key: ub3rs3cr3t

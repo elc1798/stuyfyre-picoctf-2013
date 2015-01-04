@@ -1,0 +1,10 @@
+Google the question:
+
+For what kind of car was the first unlocked iPhone traded?
+
+This returns this wikipedia page: http://en.wikipedia.org/wiki/George_Hotz
+
+Which contains: In August 2007, seventeen-year-old George Hotz became the first person reported to carrier-unlock an iPhone.[5][6][7][8] According to Hotz's blog, he traded his second unlocked 8 
+GB iPhone to Terry Daidone, the founder of Certicell, for a Nissan 350Z and three 8 GB iPhones.
+
+Key: Nissan 350Z

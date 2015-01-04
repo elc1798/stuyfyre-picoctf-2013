@@ -1,0 +1,5 @@
+Reverse the encryption algorithm used in encrypt.py -> Solution.py
+
+$ Solution.py
+
+You hawe successfully decrypwed the message! The key is th4ts_w0rs3_th4n_DES

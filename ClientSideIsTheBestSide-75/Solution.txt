@@ -1,0 +1,16 @@
+Inspecting the source code, we see this:
+
+ checkpass = document.getElementById("pass").value;
+    if (md5(checkpass) == "03318769a5ee1354f7479acc69755e7c") {
+      alert("Correct!");
+      document.location="./aebe515f7c62b96ad7de047c11aa3228.html";
+    }
+
+Using http://www.hashkiller.co.uk/md5-decrypter.aspx, we get that that hash has the password: dinosaur
+
+Inspecting the source code further, we see 	<input type="submit" value="Log in" onclick="verify(); return false;" />
+Modify it to say:				<input type="submit" value="Log in" onclick="verify(); return true;" />
+
+Input 'dinosaur' into the input box and hit submit:
+
+Key: cl13nt_s1d3_1s_w0rst_s1d3

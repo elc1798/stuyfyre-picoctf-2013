@@ -1,0 +1,3 @@
+Opening recovery.zip in a hex editor yields the following in the header:
+
+Key: Next stop Tau Eridani

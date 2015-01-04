@@ -1,0 +1,5 @@
+tar -xf grep.tar
+
+Now we have 1000 files to look through... eww...
+
+Luckily we have grep! But I'm not that good with BASH one liners so I wrote a Java program called GrepIsYourFriend.java. Run it, it gives you the file name :D

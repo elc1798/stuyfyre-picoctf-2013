@@ -1,0 +1,11 @@
+Click the button and you see: Either you aren't admin or wrong competition
+
+In the URL you see: https://2013.picoctf.com/problems/getquery/index.php?admin=false&competition=ccdc
+
+This gives us the parameters 'admin' and 'competition' for this php page.
+
+Modify the URL: https://2013.picoctf.com/problems/getquery/index.php?admin=true&competition=picoctf
+
+This changes the display to: FLAG: 9fa449c061d64f58de600dfacaa6bd5d
+
+Flag: 9fa449c061d64f58de600dfacaa6bd5d

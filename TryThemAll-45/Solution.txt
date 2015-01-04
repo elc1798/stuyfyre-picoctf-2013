@@ -1,0 +1,11 @@
+Please don't try them all:
+
+http://www.hashkiller.co.uk/md5-decrypter.aspx
+
+Input: ad77610580020ee9b42e05695e7cdb86
+
+Output: eke1505
+
+Problem says the salt is 1505, so un-append it: 'eke'
+
+Key: eke

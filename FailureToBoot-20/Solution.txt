@@ -1,0 +1,4 @@
+Google the error message: ERROR: 0x00000023
+Google returns: FAT_FILE_SYSTEM_ERROR
+
+Flag: FAT

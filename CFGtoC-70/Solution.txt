@@ -1,0 +1,42 @@
+Analyzing the flow graphs tells us the following at a glance:
+
+1 is a one process loop
+2 is a conditional
+3 is a conditional in a multi-process loop
+4 is a 1 step process
+
+Judging from these, we can see that using these formats, the only matches can be:
+
+1 - B
+	int loop(int a)
+        {
+            while (a >= 0) { // Here is the loop
+                a--; // Here is the single process
+            }
+            return a;
+        }
+2 - C
+	int control(int a, int b)
+        {    
+            if (a > b) // Here is the conditional
+                return b;
+            else 
+                return a;  
+            
+        }
+3 - D
+	int for_loop(int a, int b, int c)
+        {
+            int i;
+
+            for(i = 0; i < b; i++) // For loops are a loop with a condition and single operation/process
+                 a = c + i; // Second process, creating multiprocess loop
+            return a;
+        }
+4 - A
+	int modulo(int a, int b)
+        {
+            return b % a; // Here is the single process / operation
+        }
+
+Key: BCDA

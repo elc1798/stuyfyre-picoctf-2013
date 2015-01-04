@@ -1,0 +1,7 @@
+The bottom right corner has flashing text in German, but it flashes for a split second and if you stare intently, it says Key: <stuff>
+
+You can either keep staring intently and get each character at a time, or just use a gif splitter:
+
+http://ezgif.com/split/5e72450eae.gif
+
+Key: Do passports let you fly interstellar?

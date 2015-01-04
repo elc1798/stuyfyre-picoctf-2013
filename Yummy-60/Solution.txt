@@ -1,0 +1,42 @@
+Upon entering the page, you see:
+
+Login Failure
+You are not authorized to view this page.
+
+Upon inspecting the source, you see:
+
+<!-- DEBUG: Expected Cookie: "authorization=administrator"
+received Cookie: "_ga=GA1.2.1195614594.1420324614; __utmt=1; __utma=159077049.1195614594.1420324614.1420324627.1420327997.2; __utmb=159077049.5.9.1420331393022; __utmc=159077049; 
+__utmz=159077049.1420324627.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); 
+flask2013=eyJzZXNzaW9uX2lkIjp7IiBiIjoiTVdFNFkyUmhOR1ZpTXpZeE5HUmpOV0ZoTWpRMU1ERXlPRGcxTXpobVltVT0ifSwidGlkIjoiMTM1YjMwYzQ4ZWJmNDgzNjgyY2JlNGVkZjZmNTMxMjcifQ.B4oblQ.sbu1Jc4DBPJ3tFuS1Qgsu4_ugWI" -->
+
+Using a cookie editor such as Google Chrome Extension "EditThisCookie", delete all the current cookies and add a new cookie in with id=authorization and value=administrator, and refresh the page.
+
+This yeilds:
+
+
+
+				Docking Bay Ship Status
+
+				Login Success.
+
+
+
+Docking Bay			Ship Designation			Status
+DX9-2				Proud Planetary Prowler			Under Repair
+DX5-2				Century Eagle				Fuelling
+DX6-7				USS Franchise				Awaiting Launch
+DX7-1				HMS Beagle				Under Repair
+DX7-2				Pwnie Express				Awaiting Launch
+DX9-5				Happy Fun Time Awesome Best Ship	Awaiting Launch
+DX2-2				Roflcopter				Under Repair
+DX4-5				YHXS-2 Ghost				Under Repair
+DX4-9				Theseus					Awaiting Launch
+DX8-2				Drone DK97				Fuelling
+
+Valid keys:
+
+DX6-7
+DX7-2
+DX9-5
+DX4-9

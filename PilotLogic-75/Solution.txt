@@ -1,0 +1,20 @@
+Connect to the Shell Server
+
+$ cd /problems/pilot_logic
+$ ls
+home  lost+found
+$ ls -a
+.  ..  home  lost+found
+$ cd home
+$ ls -a
+.  ..  bureaubot  guardbot  janitorbot  pilotbot
+$ cd pilotbot
+$ ls -a
+.  ..  Desktop  Documents  Music  Pictures  Public  .secret
+$ cd .secret
+$ ls
+key
+$ cat key
+"You can't take the sky from me"
+
+Key: You can't take the sky from me

@@ -1,0 +1,17 @@
+Go the link provided: https://2013.picoctf.com/autoproblems/tmpTRZkUw.xml
+
+Open the source code:
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<garbage
+  <writing>
+    <?xml verion="1.0" encoding"UTF-8"
+      is really
+
+    <super_secret_flag>11754917168578725512647343212</super_secret_flag>
+
+</ gar <bage>
+
+Then ponder the amazing horribleness of this code... 
+
+Flag: 11754917168578725512647343212
