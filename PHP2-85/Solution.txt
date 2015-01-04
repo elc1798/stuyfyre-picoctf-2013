@@ -40,5 +40,24 @@ if($_GET[id] == "admin")
   echo "<p>Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>";
 }
 
-This function does not use regex matching, but uses regular string matching!
+This function does not use regex matching, but urldecodes it first and then uses regular string matching!
 
+Because the website automatically url decodes it when the $_GET parameters are taken, we need to URL encode 'admin' *twice*
+
+admin -> %61%64%6D%69%6E -> %25%36%31%25%36%34%25%36%44%25%36%39%25%36%45
+
+https://2013.picoctf.com/problems/php2/?id=%2561%2564%256D%2569%256E
+
+
+The above URL gives us:
+
+Access granted!
+
+Key: b4cc845aa05ed9b0ce823cb04f253e27
+
+
+
+Can you authenticate to this website?
+
+
+Key: b4cc845aa05ed9b0ce823cb04f253e27
