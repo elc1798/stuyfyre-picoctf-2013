@@ -1,0 +1,7 @@
+Decompile the class file:
+
+$ java Crackme
+Please enter the password:
+eupai1AhNu7aeTho
+Correct
+Your key is: n0th1ng_1s_saf3

@@ -1,0 +1,41 @@
+View the source and we see: <!-- source: index.phps -->
+Modify the url: https://2013.picoctf.com/problems/php2/index.phps
+
+And we see:
+
+<?
+if(eregi("admin",$_GET[id])) {
+  echo("<p>not allowed!</p>");
+  exit();
+}
+
+$_GET[id] = urldecode($_GET[id]);
+if($_GET[id] == "admin")
+{
+  echo "<p>Access granted!</p>";
+  echo "<p>Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>";
+}
+?>
+
+
+<br><br>
+Can you authenticate to this website?
+<!-- source: index.phps -->
+
+Now we see a simple solution:
+
+if(eregi("admin",$_GET[id])) {
+  echo("<p>not allowed!</p>");
+  exit();
+}
+
+The above function says if our parameter query has a regex match with "admin" then it exits immediately.
+
+$_GET[id] = urldecode($_GET[id]);
+if($_GET[id] == "admin")
+{
+  echo "<p>Access granted!</p>";
+  echo "<p>Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>";
+}
+
+This function does not use regex matching, but uses regular string matching!
