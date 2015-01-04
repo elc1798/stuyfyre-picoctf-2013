@@ -1,20 +1,20 @@
 Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
 Audit File
 
-Foremost started at Sat Jan  3 21:34:28 2015
+Foremost started at Sat Jan  3 21:41:35 2015
 Invocation: foremost spamcarver.jpg 
 Output directory: /home/sublimau5/Development/stuyfyre-picoctf-2013/SpamCarver-70/output
 Configuration file: /etc/foremost.conf
 ------------------------------------------------------------------
 File: spamcarver.jpg
-Start: Sat Jan  3 21:34:28 2015
+Start: Sat Jan  3 21:41:35 2015
 Length: 62 KB (64023 bytes)
  
 Num	 Name (bs=512)	       Size	 File Offset	 Comment 
 
 0:	00000000.jpg 	      50 KB 	          0 	 
 1:	00000101.zip 	      11 KB 	      52110 	 
-Finish: Sat Jan  3 21:34:28 2015
+Finish: Sat Jan  3 21:41:35 2015
 
 2 FILES EXTRACTED
 	
@@ -22,4 +22,4 @@ jpg:= 1
 zip:= 1
 ------------------------------------------------------------------
 
-Foremost finished at Sat Jan  3 21:34:28 2015
+Foremost finished at Sat Jan  3 21:41:35 2015
