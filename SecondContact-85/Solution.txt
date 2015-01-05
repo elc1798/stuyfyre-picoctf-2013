@@ -1,0 +1,7 @@
+PCAP file here: https://www.cloudshark.org/captures/f0741cdfee53
+
+Note that packet 754 has a search client query: fetch?q=smashing+the+stack+for+fun+and+profit
+
+The hint says the key is the author of the document they searched so google yields Smashing the Stack For Fun and Profit to be written by Aleph One
+
+Key: Aleph One
