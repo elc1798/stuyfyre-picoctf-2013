@@ -1,0 +1,86 @@
+Let's take a look at this fragment
+
+if int(serial[15]) + int(serial[4]) != 10:
+    return False
+  if int(serial[1]) * int(serial[18]) != 2:
+    return False
+  if int(serial[15]) / int(serial[9]) != 1:
+    return False
+  if int(serial[17]) - int(serial[0]) != 4:
+    return False
+  if int(serial[5]) - int(serial[17]) != -1:
+    return False
+  if int(serial[15]) - int(serial[1]) != 5:
+    return False
+  if int(serial[1]) * int(serial[10]) != 18:
+    return False
+  if int(serial[8]) + int(serial[13]) != 14:
+    return False
+  if int(serial[18]) * int(serial[8]) != 5:
+    return False
+  if int(serial[4]) * int(serial[11]) != 0:
+    return False
+  if int(serial[8]) + int(serial[9]) != 12:
+    return False
+  if int(serial[12]) - int(serial[19]) != 1:
+    return False
+  if int(serial[9]) % int(serial[17]) != 7:
+    return False
+  if int(serial[14]) * int(serial[16]) != 40:
+    return False
+  if int(serial[7]) - int(serial[4]) != 1:
+    return False
+  if int(serial[6]) + int(serial[0]) != 6:
+    return False
+  if int(serial[2]) - int(serial[16]) != 0:
+    return False
+  if int(serial[4]) - int(serial[6]) != 1:
+    return False
+  if int(serial[0]) % int(serial[5]) != 4:
+    return False
+  if int(serial[5]) * int(serial[11]) != 0:
+    return False
+  if int(serial[10]) % int(serial[15]) != 2:
+    return False
+  if int(serial[11]) / int(serial[3]) != 0:
+    return False
+  if int(serial[14]) - int(serial[13]) != -4:
+    return False
+  if int(serial[18]) + int(serial[19]) != 3:
+    return False
+
+
+Now we have a 20 length string of numbers and a giant system of equations:
+
+Let the string be ABCDEFGHIJKLMNOPQRST
+P + E = 10
+B * S = 2
+P / J = 1
+R - A = 4
+F - R = -1
+P - B = 5
+B * K = 18
+I + N = 14
+S * I = 5
+E * L = 0
+I + J = 12
+M - T = 1
+P - B = 5
+B * K = 18
+I + N = 14
+S * I = 5
+E * L = 0
+I + J = 12
+M - T = 1
+J % R = 7
+O * Q = 40
+H - E = 1
+G + A = 6
+C - Q = 0
+E - G = 1
+A % F = 4
+F * L = 0
+K % P = 2
+L / D = 0
+O - N = -4
+S + T = 3
