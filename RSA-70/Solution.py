@@ -26,6 +26,7 @@ while (ticker * r + 1) % e != 0 and occurences != mults:
 		occurences += 1
 
 print("Cracked!")
+
 print(str(ticker))
 print("K = " + str(ticker * r + 1))
 
@@ -37,6 +38,8 @@ M = pow(c , d , N)
 
 print("M retrieved in decimal encoding!")
 
-MESSAGE = hex(M).replace("L" , "").replace("0x" , "").decode('hex')
+print M
 
-print MESSAGE
+print("Apparently the answer is in decimal encoding... for some reason...")
+
+print("Key: " + str(M))
