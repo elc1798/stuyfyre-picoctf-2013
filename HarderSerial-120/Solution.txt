@@ -84,3 +84,22 @@ K % P = 2
 L / D = 0
 O - N = -4
 S + T = 3
+
+Note:
+R-A = 4
+F-R=-1
+A%F-4:
+
+Solving this system gives us A = 4, F = 7, R = 8.
+
+Then we just do a domino effect to get every variable (CTRL+F the variable to get all its involved equations, they're all only one step, so it isn't that hard)
+
+$ python harder_serial.py 42893724579039578812
+Please enter a valid serial number from your RoboCorpIntergalactic purchase
+#>42893724579039578812<#
+Thank you! Your product has been verified!
+
+
+Key: 42893724579039578812
+
+**Note the 4th number (D) can be any number from 1 to 9**
