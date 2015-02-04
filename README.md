@@ -28,3 +28,15 @@ Team Members:
 ### Day 4:
 
 2545 Points
+
+### Day 5:
+
+2735 Points
+
+### Day 6:
+
+Didn't do anything
+
+### Day 7:
+
+
